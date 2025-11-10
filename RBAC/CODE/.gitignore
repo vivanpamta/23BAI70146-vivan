@@ -1,0 +1,25 @@
+# deps & builds
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.vercel/
+
+# env & local
+.env
+.env.*
+*.local
+
+# logs & caches
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# editor/system noise
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,244 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0e5ec;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e5ec;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px #c1c5d1, -8px -8px 15px #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #555;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px #c1c5d1, -6px -6px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #111;
+  transform: translateY(-2px);
+  box-shadow: inset 4px 4px 6px #c1c5d1, inset -4px -4px 6px #ffffff;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e0e5ec;
+  box-shadow: 6px 6px 15px #c1c5d1, -6px -6px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 4px 4px 6px #c1c5d1, inset -4px -4px 6px #ffffff;
+}
+
+.btn-primary {
+  background: #a3b1c6;
+  color: white;
+}
+
+.btn-secondary {
+  background: #d1d9e6;
+  color: #555;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+}
+
+.login-card {
+  background: #e0e5ec;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px #c1c5d1, -10px -10px 20px #ffffff;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.login-card h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #555;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-input {
+  padding: 0.8rem 1rem;
+  border-radius: 15px;
+  border: none;
+  background: #e0e5ec;
+  box-shadow: inset 6px 6px 10px #c1c5d1, inset -6px -6px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: inset 4px 4px 6px #c1c5d1, inset -4px -4px 6px #ffffff;
+}
+
+/* Cards */
+.card {
+  background: #e0e5ec;
+  border-radius: 25px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px 20px #c1c5d1, -10px -10px 20px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 6px 6px 12px #c1c5d1, inset -6px -6px 12px #ffffff;
+}
+
+/* Posts Section */
+.posts-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.post-card {
+  background: #e0e5ec;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 6px 6px 15px #c1c5d1, -6px -6px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 4px 4px 8px #c1c5d1, inset -4px -4px 8px #ffffff;
+}
+
+/* Admin Panel */
+.admin-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.admin-section {
+  background: #e0e5ec;
+  border-radius: 25px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px 20px #c1c5d1, -10px -10px 20px #ffffff;
+}
+
+.admin-section:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 6px 6px 12px #c1c5d1, inset -6px -6px 12px #ffffff;
+}
+
+/* Tables */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.users-table th, .users-table td {
+  padding: 1rem;
+  text-align: left;
+  background: #e0e5ec;
+  box-shadow: inset 3px 3px 6px #c1c5d1, inset -3px -3px 6px #ffffff;
+  border-bottom: 1px solid #c1c5d1;
+}
+
+.users-table th {
+  font-weight: 700;
+  color: #555;
+}
+
+.users-table tr:hover td {
+  background: #d1d9e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .login-card, .card, .admin-section {
+    padding: 2rem;
+  }
+}
